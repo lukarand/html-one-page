@@ -1,0 +1,236 @@
+.two-column {
+  position: relative;
+  margin-top: 140px;
+  &.right {
+    .column-content {
+      max-width: 682px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &.purple {
+      .column-content {
+        max-width: 548px;   
+      }
+    }
+    &.white {
+      .title {
+        &:before {
+          display: none;
+        }
+      }
+      .column-content {
+        margin-left: 37px;
+        max-width: 833px;
+        .content {
+          font-size: 36px;
+          line-height: 43px;
+        }
+      }
+      .featured-image {
+        width: 892px;
+        height: 915px;
+      }
+    }
+  }
+
+  .row {
+    align-items: center;
+    .featured-image {
+      width: 911px;
+      height: 843px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
+      z-index: 3;
+      background-position: center;
+    }
+    .column-content {
+      position: relative;
+      z-index: 3;
+      .title {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: '';
+          width: 21px;
+          height: 21px;
+          background-image: url('../../media/light.svg');
+          background-position: center;
+          background-size: 100%;
+          top: 75px;
+          left: -30px;
+        }
+      }
+      .content {
+        font-size: 30px;
+        max-width: 694px;
+      }
+    }
+  }
+  .background-shape {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1243px;
+    height: 1067px;
+    position: absolute;
+    top: -120px;
+    transform: rotate(-156deg);
+    img {
+      position: absolute;
+      bottom: -70px;
+      left: 430px;
+      transform: rotate(-210deg);
+    }
+    &.shape-success {
+      background-image: url('../../media/shape.svg');
+    }
+    &.shape-warning {
+      background-image: url('../../media/shape-yellow.svg');
+      transform: rotate(210deg);
+    }
+    &.shape-danger {
+      background-image: url('../../media/shape-red.svg');
+      transform: rotate(215deg);
+    }
+    &.shape-purple {
+      background-image: url('../../media/shape-purple.svg');
+      transform: rotate(214deg);
+    }
+    &.shape-info {
+      background-image: url('../../media/shape-info.svg');
+      transform: rotate(210deg);
+    }
+    &.shape-right {
+      right: -80px;
+    }
+    &.shape-left {
+      left: -40px;
+      &.shape-purple {
+        left: 0;
+      }
+    }
+  }
+  &.warning {
+    .background-shape {
+      right: -100px;
+      img {
+        left: 300px;
+        bottom: -30px;
+      }
+    }
+  }
+  &.info {
+    .background-shape {
+      right: -100px;
+    }
+  }
+  @media screen and (max-width: 1786px) {
+    .row {
+      .featured-image {
+        width: 830px;
+        height: 840px;
+      }
+    }
+    .column-content {
+      max-width: 668px;
+    }
+    &.right {
+      .column-content {
+        max-width: 620px;
+      }
+      &.white {
+        .featured-image {
+          width: 830px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1680px) {
+    .row {
+      .featured-image {
+        width: 770px;
+        height: 820px;
+      }
+    }
+    .column-content {
+      max-width: 630px;
+      .title {
+        font-size: 54px;
+      }
+    }
+    &.right {
+      .column-content {
+        max-width: 600px;
+      }
+      &.white {
+        .featured-image {
+          width: 770px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1580px) {
+    .row {
+      .featured-image {
+        width: 720px;
+      }
+      .column-content {
+        max-width: 574px;
+        .title {
+          font-size: 50px;
+        }
+      }
+    }
+    &.right {
+      &.white {
+        .featured-image {
+          width: 820px;
+        }
+      }
+    }  
+  }
+  @media screen and (max-width: 1496px) {
+    .row {
+      .featured-image {
+        width: 660px;
+        height: 820px;
+      }
+      .column-content {
+        max-width: 550px;
+        .title {
+          font-size: 48px;
+        }
+      }
+    }
+    &.right {
+      .column-content {
+        max-width: 550px;
+      }
+      &.white {
+        .featured-image {
+          width: 660px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .row {
+      .column-content {
+        max-width: 550px;
+        margin-top: 40px;
+        .title {
+          font-size: 44px;
+        }
+        .content {
+          max-width: 486px;
+        }
+      }
+    }
+    &.right {
+      .column-content {
+        max-width: 500px !important;
+        margin-right: 0;
+      }
+    }
+  }
+}

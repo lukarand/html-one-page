@@ -1,0 +1,16 @@
+.section-main {
+  padding-top: 74px;
+  padding-bottom: 128px;
+  padding-left: 10px;
+  padding-right: 10px;
+  h1 {
+    margin-left: 98px;
+    font-weight: $font-weight-bolder;
+    @media screen and (max-width: 1786px) {
+      margin-left: 40px;
+    }
+    @media screen and (max-width: 1440px) {
+      margin-left: 20px;
+    }
+  }
+}

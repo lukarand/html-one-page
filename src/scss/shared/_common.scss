@@ -1,0 +1,65 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.right-triangle {
+  position: relative;
+  font-size: 26px;
+  font-weight: $font-weight-bolder;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 23px;
+    right: -32px;
+    bottom: 3px;
+    background: url('../../media//triangle.svg');
+    background-position: center;
+    background-size: 100%;
+  }
+  &.triangle-info {
+    &:after {
+      background: url('../../media//triangle-info.svg');
+      background-position: center;
+      background-size: 100%;
+    }
+  }
+}
+
+.up-link {
+  margin-bottom: 128px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  .arrow-up {
+    position: relative;
+    font-size: 26px;
+    color: $info;
+    text-decoration: underline;
+    text-decoration-color: $white;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 41px;
+      height: 46px;
+      background-image: url('../../media/arrow-up.svg');
+      background-position: center;
+      background-size: 100%;
+      top: -60px;
+      left: 37%;
+    }
+  }
+}
